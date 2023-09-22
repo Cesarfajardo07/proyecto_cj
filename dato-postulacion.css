@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Montserrat&family=Poppins:wght@300&family=Tilt+Prism&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 10vh 75vh 15vh;
+    grid-template-areas: "header  " "content " "footer  ";
+}
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: #aacfed;
+    color: white;
+    justify-content: space-between;
+    font-size: 23pt;
+    align-items: center;
+    padding-left: 25px;
+    font-weight: 1000;
+}
+
+.header .contenedor-logo {
+    display: flex;
+    gap: 2px
+}
+
+.header .contenedor-logo .s-amarilla {
+    color: blue;
+}
+
+.header .titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header .titulo .system {
+    color: blue;
+}
+
+
+/*------------------------------------------------------------*/
+
+.contenedor-content {
+    grid-area: content;
+    width: 100%;
+    height: 100%;
+    background-color: #aacfed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.contenedor-content .informacion-demanda {
+    width: 50%;
+    height: 35%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2%;
+    box-shadow: 0 0 15px white;
+}
+
+.contenedor-content .informacion-demanda .contenedor-titulo {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #aacfed;
+    width: 100%;
+    height: 27%;
+    margin-bottom: 3%;
+}
+
+.contenedor-content .informacion-demanda .contenedor-titulo .titulo {
+    font-size: 17pt;
+}
+
+.contenedor-content .informacion-demanda .grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-1 .contenedor-num-demanda {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+.contenedor-num-demanda .titulo {
+    font-size: 14pt;
+}
+
+.contenedor-num-demanda .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+    margin-top: 1%;
+}
+
+.contenedor-fecha {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+.contenedor-fecha .titulo {
+    font-size: 14pt;
+}
+
+.contenedor-fecha .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-2 .contenedor-nombre {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 2%
+}
+
+.contenedor-nombre .titulo {
+    font-size: 14pt;
+}
+
+.contenedor-nombre .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+    margin-top: 0.5%;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-2 .vacante-postulado {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 20%;
+}
+
+.grid-2 .vacante-postulado .vacante {
+    display: flex;
+    gap: 7%;
+}
+
+.grid-2 .vacante-postulado .vacante .titulo {
+    font-size: 14pt;
+}
+
+.grid-2 .vacante-postulado .vacante .valor {
+    display: flex;
+    height: 100%;
+    font-size: 14pt;
+    margin-top: 1%;
+}
+
+.grid-2 .vacante-postulado .postulados {
+    display: flex;
+    gap: 7%;
+}
+
+.grid-2 .vacante-postulado .postulados .titulo {
+    font-size: 14pt;
+}
+
+.grid-2 .vacante-postulado .postulados .valor {
+    display: flex;
+    height: 100%;
+    font-size: 14pt;
+    margin-top: 1%;
+}
+
+
+/*------------------------------------------------------------*/
+
+.contenedor-content .informacion-persona .grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+.contenedor-content .informacion-persona .grid .grid-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.contenedor-content .informacion-persona .grid .grid-1 .contenedor-num-documento {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+.contenedor-num-documento .titulo {
+    font-size: 14pt;
+}
+
+.contenedor-num-documento .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+    margin-top: 1%;
+}
+
+.contenedor-fecha {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+
+/*------------------------------------------------------------*/
+
+.footer {
+    grid-area: footer;
+    background-color: blue;
+    height: 100%;
+}
+
+.footer:hover {
+    box-shadow: 0 0 30px blue;
+    transition: 0.5s;
+}
+
+.footer .contenedor-footer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .contenedor-footer .contenedor-imagen {
+    width: 15%;
+    margin-left: 15px;
+    height: 100%;
+}
+
+.footer .contenedor-footer .contenedor-imagen .logo-png {
+    width: 65%;
+    height: 95%;
+}
+
+.footer .contenedor-footer .informacion {
+    display: flex;
+    width: 85%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sebas,
+.william,
+.peter,
+.capera {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer .contenedor-footer .informacion article .apps {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .contenedor-footer .informacion article .apps i {
+    color: #aacfed;
+}
+
+.footer .contenedor-footer .informacion article .apps i:hover {
+    width: 100%;
+    height: 100%;
+    font-size: 18pt;
+    transition: 0.4s;
+}

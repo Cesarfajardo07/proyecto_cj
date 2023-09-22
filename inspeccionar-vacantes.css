@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Montserrat&family=Poppins:wght@300&family=Tilt+Prism&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 10vh 10vh 65vh 15vh;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "content"
+    "footer"  ;
+}
+
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: #aacfed;
+    color: white;
+    justify-content: space-between;
+    font-size: 23pt;
+    align-items: center;
+    padding-left: 25px;
+    font-weight: 1000;
+}
+
+.header .contenedor-logo {
+    display: flex;
+    gap: 2px
+}
+
+.header .contenedor-logo .s-amarilla {
+    color: blue;
+}
+
+.header .titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header .titulo .system {
+    color: blue;
+}
+
+/*-------------------------------------------------------------*/
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #aacfed;
+}
+
+.navbar .titulo-nav {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    color: white;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 18pt;
+    justify-content: center;
+}
+
+.navbar .contenedor-input {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .contenedor-input .input {
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color:#aacfed;
+    box-shadow: 0 0 7px white;
+    color: white;
+    padding: 1.5%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.navbar .contenedor-input .input::placeholder{
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.navbar .contenedor-input .input:hover{
+    box-shadow: 0 0 15px white;
+    transition: 0.4s;
+}
+
+/*-------------------------------------------------------------*/
+
+.contenedor-content {
+    grid-area: content;
+    width: 100%;
+    height: 100%;
+    background-color: #aacfed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-content .contenedor-oferta {
+    display: flex;
+    justify-content: center; 
+    width: 60%;
+    height: 70%;
+    flex-wrap: wrap;
+    border-radius: 20px 0 0 20px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px white;
+    overflow-y: scroll;
+    gap: 10%;
+    position: relative;
+    top: -5%
+}
+
+.contenedor-content .contenedor-oferta:hover{
+    box-shadow: 0 0 30px white;
+    transition: 0.4s;
+}
+
+.contenedor-content .contenedor-oferta::-webkit-scrollbar{
+    width: 9px;
+}
+
+.contenedor-content .contenedor-oferta::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.544);
+}
+
+.contenedor-content .contenedor-oferta .grupo-oferta {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 15px;
+    color: #aacfed;
+    position: relative;
+    top: 10%;
+}
+
+.contenedor-content .contenedor-oferta .grupo-oferta .informacion-oferta {
+    display:grid;
+    grid-template-columns: 25% 1fr;
+    gap: 3%;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-content .contenedor-oferta .grupo-oferta .informacion-oferta .grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 8%;
+    font-size: 11pt;
+}
+
+.contenedor-content .contenedor-oferta .grupo-oferta .informacion-oferta .numero-oferta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25pt;
+    border-radius: 20px 0 0 20px;
+}
+
+.contenedor-content .contenedor-oferta .grupo-oferta .informacion-oferta .titulo-oferta {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 3%;
+}
+
+.contenedor-content .contenedor-oferta .grupo-oferta .informacion-oferta .contenedor-botones {
+    display: flex;
+    width: 100%;
+    height: 16%;
+    justify-content: end;
+    right: 23%;
+    align-items: center;
+    position: relative;
+    top: 5%;
+}
+
+.contenedor-content .contenedor-oferta .grupo-oferta .informacion-oferta .contenedor-botones .postularme {
+    display: flex;
+    background-color: blue;
+    color: #aacfed;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px blue;
+    font-size: 13pt;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 1000;
+}
+
+.contenedor-content .contenedor-oferta .grupo-oferta .informacion-oferta .contenedor-botones .postularme:hover {
+    background-color: #aacfed;
+    color: blue;
+    transition: 0.5s;
+}
+
+.boton-volver {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.boton-volver .volver {
+    background-color: blue;
+    color: #aacfed;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 0.7%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 10px blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boton-volver .volver:hover {
+    background-color: #aacfed;
+    color: blue;
+    transition: 0.5s;
+    box-shadow: 0 0 20px blue;
+}
+
+/*-------------------------------------------------------------*/
+
+.footer {
+    grid-area: footer;
+    background-color: blue;
+    height: 100%;
+}
+
+.footer:hover{
+    box-shadow: 0 0 30px blue;
+    transition: 0.5s;
+}
+
+.footer .contenedor-footer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .contenedor-footer .contenedor-imagen {
+    width: 15%;
+    margin-left: 15px;
+    height: 100%;
+}
+
+.footer .contenedor-footer .contenedor-imagen .logo-png{
+    width: 65%;
+    height: 95%;
+}
+
+.footer .contenedor-footer .informacion {
+    display: flex;
+    width: 85%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sebas,.william,.peter,.capera {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer .contenedor-footer .informacion article .apps {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .contenedor-footer .informacion article .apps i {
+    color: #aacfed;
+    
+}
+
+.footer .contenedor-footer .informacion article .apps i:hover {
+    width: 100%;
+    height: 100%;
+    font-size: 18pt;
+    transition: 0.4s;
+}

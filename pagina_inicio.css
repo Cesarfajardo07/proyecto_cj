@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Montserrat&family=Poppins:wght@300&family=Tilt+Prism&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 75vh 15vh;
+    grid-template-areas: 
+    "header    header"
+    "content   sidebar"
+    "footer    footer";
+}
+
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: #aacfed;
+    color: white;
+    justify-content: space-between;
+    font-size: 23pt;
+    align-items: center;
+    padding-left: 25px;
+    font-weight: 1000;
+}
+
+.header .contenedor-logo {
+    display: flex;
+    gap: 2px
+}
+
+
+.header .titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header .titulo .system {
+    color: blue;
+}
+
+/*------------------------------------------------------------*/
+
+.contenedor-content {
+    grid-area: content;
+    background-color: #aacfed;
+    color: white    ;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-content .content {
+    width: 92%;
+    height: 100%;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-content .content .informacion {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.informacion .titulo {
+    display: flex;
+    color: blue;
+    gap: 5px;
+    font-size: 24pt;
+    font-weight: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.informacion .titulo .system {
+    color: blue;
+}
+
+.informacion p {
+    margin-top: 30px;
+    font-size: 14pt;
+    margin-bottom: 30px;
+}
+
+.informacion .botones {
+    display: flex;
+    gap: 50px;
+}
+
+.informacion .botones a {
+    text-decoration: none;
+    color: #aacfed;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    font-weight: 1000;
+    box-shadow: 0 0 10px blue;
+}
+
+.informacion .botones a:hover {
+    transition: 0.4s;
+    background-color: #aacfed;
+    color: blue;
+}
+
+.contenedor-sidebar {
+    grid-area: sidebar;
+    background-color: #aacfed;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-sidebar .sidebar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-sidebar .contenedor-imagen {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    margin: auto;
+}
+
+.contenedor-sidebar .contenedor-imagen .imagen {
+    border-radius: 100px;
+}
+
+.contenedor-sidebar .contenedor-imagen .imagen:hover {
+    transition: 0.5s;   
+    box-shadow: 0 0 40px blue;
+}
+
+/*------------------------------------------------------------*/
+
+.footer {
+    grid-area: footer;
+    background-color: blue;
+    height: 100%;
+}
+
+.footer:hover{
+    box-shadow: 0 0 30px blue;
+    transition: 0.5s;
+}
+
+.footer .contenedor-footer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .contenedor-footer .contenedor-imagen {
+    width: 15%;
+    margin-left: 15px;
+    height: 100%;
+}
+
+.footer .contenedor-footer .contenedor-imagen .logo-png{
+    width: 65%;
+    height: 95%;
+}
+
+.footer .contenedor-footer .informacion {
+    display: flex;
+    width: 85%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cesar,.jessica{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer .contenedor-footer .informacion article .apps {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .contenedor-footer .informacion article .apps i {
+    color: #aacfed;
+    
+}
+
+.footer .contenedor-footer .informacion article .apps i:hover {
+    width: 100%;
+    height: 100%;
+    font-size: 18pt;
+    transition: 0.4s;
+}
