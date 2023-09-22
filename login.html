@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Inspeccionar Busqueda</title>
-    <link rel="stylesheet" href="busqueda.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
     <script src="https://kit.fontawesome.com/10d9a6ff24.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,28 +21,66 @@
         </header>
 <!---------------------------------------------------------------->
 
-            <section class="contenedor-buscador">
+        <section class="contenedor-login">
+            <form class="formulario" method="get" action="terminos-condiciones.html">
+                <article class="contenedor-imagen">
+                   
+                </article>
 
-                <form class="contenedor-cuadro" method="get" action="inspeccionar-vacantes.html">
-                    <article class="informacion">
-                        <article clas="titulo-barra">
-                            <h1 class="titulo">Buscador de vacantes</h1>
-                            <h1 class="barra"></h1>
+                <section class="grid">
+                <section class="primera-barra">
+                    <article class="contenedor-titulo">
+                        <span class="titulo">Que usuario eres</span>
+                    </article>
+
+                    <section class="barra-checkbox">
+                        <article>
+                            <input class="checkbox" type="checkbox" value="admin"/> Admin
                         </article>
 
-                        <article class="contenedor-input">
-                            <input class="input" type="search" placeholder="Consulta las diferentes vacantes disponibles">
+                        <article>
+                            <input class="checkbox" type="checkbox"value="instructor"/> Instructor
                         </article>
 
-                    <article class="botones">
-                        <a class="boton-volver" href="index.html">Volver</a>
-                        <input class="boton-buscar" type="submit" name="buscar" value="Buscar"/>
-                        <!-- <a class="boton-buscar" href="inspeccionar-vacantes.html" target="_blank">Buscar</a>                     -->
-                    </article>
-                    </article>
-                </form>
+                        <article>
+                            <input class="checkbox" type="checkbox" value="seleccionador"/> Seleccionador
+                        </article>
 
-            </section>
+                        <article>
+                            <input class="checkbox" type="checkbox" value="reclutador"/> Reclutador
+                        </article>
+
+                        <article>
+                            <input class="checkbox" type="checkbox" value="candidato"/> Candidato
+                        </article>
+
+                    </section>
+                </section>
+
+                <section class="segunda-barra">
+                    <section class="informacion-barra-2">
+
+                        <article>
+                            <h1 class="titulo-documento">Num Documento: </h1>
+                            <input class="input" type="number" placeholder="Ingrese su numero de documeto">
+                        </article>
+                    
+                        <article>
+                            <h1 class="titulo-contraseña">Contraseña: </h1>
+                            <input class="input" type="password" placeholder="Ingrese su contraseña">
+                        </article>
+
+                    </section>
+                </section>
+
+                <section class="tercera-barra">
+                    <article>
+                        <input class="iniciar" type="submit" name="iniciar" value="Iniciar"/>
+                        <a class="olvido" href="" target="_blank">¿Olvidaste tu contraseña?</a>
+                    </article>
+                </section>
+                </section>
+            </form>
         </section>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------->
